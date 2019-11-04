@@ -1,0 +1,134 @@
+<html>
+    <head>
+        <title>Referral Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel= "stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href= "https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href= "https://fonts.googleapis.com/css?family=Kaushan+Script" rel='stylesheet' type='text/css'>
+    <link href= "https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel='stylesheet' type='text/css'>
+    <link href= "https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel='stylesheet' type='text/css'>
+    <style>
+    .jumbotron {
+      border-radius: 6px;
+      margin-right: 30%;
+      margin-left: 30%;
+      background: rgba(255,255,255,0.5);
+      z-index: 2;
+      box-shadow: 0 8px 16px -6px black
+    };
+    
+    .container2 {
+      padding-top : 15px;
+      margin-bottom: 10px;
+    }
+    a {
+        color: #ffffff;
+    }
+    a:visited {
+    color:#fff;
+    }
+    a:hover {
+    color:#fff;
+  }
+    .button
+    {
+        z-index : 3;
+        box-shadow: 0 8px 8px -6px black;
+    }
+    .container{
+      padding-top : 15px;
+      margin-left: 20px;
+      margin-right:20px;
+      margin-bottom: 10px;
+    }
+    .container1{
+      margin:15px;
+    }
+    .form-ele {
+      padding-top: 20px;
+      font-size : 28;
+    }
+    .iptext {
+
+    }
+    div {
+      font-family: 'Times New Roman', Georgia, serif;
+    }
+    .header1 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      
+      font-family: 'Times New Roman', Georgia, serif;
+    }
+    .navbar {
+      background-color: #333;
+      color: #FFFFFF;
+    }
+    body {
+        background-color : #AAA;
+    }
+    .label-header {
+        padding-left:50px;
+        padding-right : 50px;
+        text-align: left;
+    }
+    .label-header, .label-body {
+        padding-top :5px;
+        padding-bottom : 5px;
+    }
+    
+
+    </style>
+    </head>
+    <body>
+        <div class="container2 navbar row">
+              <div class="header1 col-md-9" style='font-size: 32px' >
+                  <B>Disaster Fund Release</B>
+              </div>
+            <div class="col-lg-1"> <a href="index.html"> Employee</a></div>
+            <div class="col-lg-1"> <a href="#">Existing Customer </a></div>
+            <div class="col-lg-1"> <a href="referral.html">New User</a></div>
+        </div>
+        <header>
+              <div class="container1" align="center" style="margin-top: 42px">
+                  <h1>Request for Aid</h1>
+                  <br>
+              </div>
+        </header>
+        <div class ="jumbotron" style="padding-top: 40px; padding-bottom: 40px;">
+        <form action="referralDB.jsp">
+            
+            <div class="row">
+                <div class="label-header col-lg-6">First Name:</div>
+                <div class="label-body "><input type="text" name="firstName" value="" placeholder="First Name" required=""/></div><br>
+            </div>
+            <div class="row">
+                <div class="label-header col-lg-6">Last Name:</div>
+                <div class="label-body "> <input type="text" name="lastName" value="" placeholder="Last Name" required=""/></div><br>
+            </div>
+            <div class="row">
+                <div class="label-header col-lg-6">Address: </div>
+                <div class="label-body "><textarea name="address" rows="2" cols="20" placeholder="Address" required=""/></textarea></div><br></div>
+            <div class="row">
+                <div class="label-header col-lg-6">Phone Number:</div>
+                <div class="label-body "> <input type="text" name="number" value="" placeholder="Phone Number"required=""/></div><br>
+            </div>
+            <div class="row">
+                <div class="label-header col-lg-6">Salary: </div>
+                <div class="label-body "><input type="text" name="salary" value="" placeholder="Salary" required=""/></div><br>
+            </div>
+            <div class="row">
+                <div class="label-header col-lg-6">Property Assets: </div>
+                <div class="label-body "><input type="text" name="propertyAssets" value="" placeholder="Property Assets" required=""/></div><br>
+            </div>
+            <div class="row">
+                <div class="label-header col-lg-6">Comments: </div>
+                <div class="label-body "><input type="text" name="comments" value="" placeholder="Comments if any"/></div><br>
+            </div><br>
+            <center><input class='button' type="submit" value="Submit" /></center>
+        </form>
+        </div>
+    </body>
+</html>
